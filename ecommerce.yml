@@ -13,9 +13,6 @@ spring:
         url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul
         username: park
         password: 1234
-    mvc:
-        pathmatch:
-            matching-strategy: ant_path_matcher
     servlet:
         multipart:
             max-file-size: 10MB
