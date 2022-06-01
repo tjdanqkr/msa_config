@@ -5,3 +5,20 @@ jwt:
     TOKEN_VALIDATE_TIME: 604800000
 gateway:
     ip: 127.0.0.1
+spring:
+    devtools:
+        livereload:
+            enabled: true
+    datasource:
+        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul
+        username: park
+        password: 1234
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+    servlet:
+        multipart:
+            max-file-size: 10MB
+            max-request-size: 10MB
+mybatis:
+    config-location: classpath:config/mybatis.xml
