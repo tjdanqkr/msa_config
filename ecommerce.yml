@@ -1,21 +1,21 @@
 jwt:
-    HEADER: Authorization
-    # HEADER: Hello_World
-    SECRET_KEY: SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY
-    TOKEN_VALIDATE_TIME: 604800000
+  HEADER: Authorization
+  # HEADER: Hello_World
+  SECRET_KEY: SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY_SECRET_KEY
+  TOKEN_VALIDATE_TIME: 604800000
 gateway:
-    ip: 127.0.0.1
+  ip: 127.0.0.1
 spring:
-    devtools:
-        livereload:
-            enabled: true
-    datasource:
-        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul
-        username: park
-        password: 1234
-    servlet:
-        multipart:
-            max-file-size: 10MB
-            max-request-size: 10MB
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul
+    username: park
+    password: "{cipher}635cb95cc607d8e556c01876543fb0750e23663cae226c645316ddd7eb0bbb1d"
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 mybatis:
-    config-location: classpath:config/mybatis.xml
+  config-location: classpath:config/mybatis.xml
